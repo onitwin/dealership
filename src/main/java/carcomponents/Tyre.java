@@ -1,13 +1,15 @@
 package carcomponents;
 
-public class Tyre {
+import behaviours.IValue;
+
+public class Tyre  implements IValue {
     private String brand;
-    private int cost;
+    private int price;
 
 
-    public Tyre(String brand,int cost){
+    public Tyre(String brand,int price){
         this.brand=brand;
-        this.cost=cost;
+        this.price= price;
     }
 
     public String getBrand() {
@@ -19,10 +21,14 @@ public class Tyre {
     }
 
     public int getCost() {
-        return cost;
+        return price;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
+    public void setCost(int price) {
+        this.price = price;
+    }
+
+    public int value(){
+        return this.price;
     }
 }
