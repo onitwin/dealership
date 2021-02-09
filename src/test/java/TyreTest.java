@@ -21,4 +21,9 @@ public class TyreTest {
     public void canGetCost(){
         assertEquals(20,tyre.getCost());
     }
+
+    @Test
+    public void canGetValue(){
+        assertEquals(20,tyre.value());
+    }
 }

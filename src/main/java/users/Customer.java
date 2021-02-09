@@ -1,7 +1,6 @@
 package users;
 
 import behaviours.IBuy;
-import behaviours.ISell;
 import carcomponents.Car;
 
 import java.util.ArrayList;

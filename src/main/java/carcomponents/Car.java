@@ -24,10 +24,6 @@ public class Car implements IValue {
         return model;
     }
 
-    public int getPrice() {
-        return price;
-    }
-
     public void setPrice(int price) {
         this.price = price;
     }
@@ -58,15 +54,15 @@ public class Car implements IValue {
         this.price -= damage;
     }
 
-    public void repairDamage(int damage) {
+    public void repairDamage(int repairValue) {
         if (damage > 0) {
-            this.damage -= this.damage;
-            this.price = +this.damage;
+            this.damage -= repairValue;
+            this.price +=repairValue;
         }
     }
 
     public int value(){
-        return this.price - this.damage;
+        return this.price;
 
     }
 
